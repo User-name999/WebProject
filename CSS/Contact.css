@@ -1,0 +1,276 @@
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #424549;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  font-family: Garamond;
+}
+
+/* This is for the animation */
+@-webkit-keyframes Fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*Start of header */
+
+header, .HeadingContainer {
+  background-color: #1e2124;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Heading {
+  font-size: 50px;
+  position: relative;
+  text-align: left;
+  color: #ffffff;
+}
+
+li {
+  position: relative;
+  margin: 30px;
+  display: inline;
+  bottom: 10px;
+}
+
+.headerNav {
+  font-size: 18px;
+  background-color: inherit;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.headerNav:hover {
+  background-color: #ffffff;
+  color: #424549;
+}
+
+/*End of header */
+
+/*Start of content */
+
+.bodyHeading {
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  margin: 40px;
+  color: #ffffff;
+  animation-name: Fade;
+  animation-duration: 1s;
+}
+
+#HR {
+  border-color: #ffffff;
+}
+
+.divBody {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  animation-name: Fade;
+  animation-duration: 1s;
+}
+
+.divBox {
+  width: 500px;
+  height: 210px;
+  margin: 25px;
+  padding: 30px;
+  background-color: #1e2124;
+}
+
+.divBox, .divBoxImage{
+  display: inline-block;
+}
+
+.subHeadBody{
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+
+}
+
+.divP {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+  top: 15%;
+}
+
+.divBoxImage {
+  float: right;
+  margin-right: 20px;
+}
+
+img {
+  position: relative;
+  padding: 30px;
+}
+
+.divForm {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.contactForm {
+  width: 80%;
+  text-align: center;
+  position: relative;
+  left: 15%;
+}
+
+fieldset {
+  position: relative;
+  text-align: center;
+  border-color: #1e2124;
+}
+
+legend {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+label {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+textarea {
+  background-color: #1e2124;
+  color: #ffffff;
+}
+
+.details {
+  background-color: #1e2124;
+  color: #ffffff;
+}
+
+#SubmitButton {
+  border-radius: 3px;
+  width: 70px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#SubmitButton:hover {
+  background-color: #ffffff;
+  color: #1e2124;
+}
+
+/*End of content */
+
+/*Start of footer */
+
+footer {
+  background-color: #1e2124;
+  position: relative;
+  bottom: 0;
+  height: 80px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+  padding-top: 40px;
+}
+/*End of footer */
+
+/* For Mobile Phones */
+@media screen and (max-width: 470px) {
+
+  .headerNav {
+    font-size: 13px;
+  }
+
+  ul {
+    padding: 10px;
+    padding-bottom: 0px;
+  }
+
+  li {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .Heading {
+    text-align: center;
+  }
+
+  .divBody {
+    height: 720px;
+  }
+
+
+  .divBox {
+    width: 70%;
+    height: 300px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .divBoxImage {
+    float: none;
+    margin-right: 0px;
+  }
+
+  .contactForm {
+    left: 10%;
+  }
+}
+
+/* For Tablets and small laptops */
+@media screen and (max-width: 950px) and (min-width: 471px) {
+
+  .divBody {
+    height: 600px;
+  }
+
+  .divBox {
+    width: 70%;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .divBoxImage {
+    float: none;
+    margin-right: 0px;
+  }
+
+  .contactForm {
+    left: 10%;
+  }
+}
+
+/* For laptops and desktop */
+@media screen and (min-width: 1250px) {
+
+  .divBox {
+    width: 50%;
+    height: 210px;
+  }
+
+  .divBoxImage {
+    margin-right: 110px;
+  }
+
+  .contactForm {
+    left: 14%;
+  }
+}

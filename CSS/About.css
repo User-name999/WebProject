@@ -1,0 +1,321 @@
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #424549;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 0 0 0;
+  font-family: Garamond;
+}
+
+/* This is for the animation */
+@-webkit-keyframes Fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*Start of header */
+
+header, .HeadingContainer {
+  background-color: #1e2124;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Heading {
+  font-size: 50px;
+  position: relative;
+  text-align: left;
+  color: #ffffff;
+}
+
+li {
+  position: relative;
+  margin: 30px;
+  display: inline;
+  bottom: 10px;
+}
+
+.headerNav {
+  font-size: 18px;
+  background-color: inherit;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.headerNav:hover {
+  background-color: #ffffff;
+  color: #424549;
+}
+
+/*End of header */
+
+/*Start of content */
+
+.bodyHeading {
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  margin: 40px;
+  color: #ffffff;
+  animation-name: Fade;
+  animation-duration: 1s;
+}
+
+#HR {
+  border-color: #ffffff;
+}
+
+.divBody {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  animation-name: Fade;
+  animation-duration: 1s;
+}
+
+.divBox {
+  width: 520px;
+  height: 210px;
+  margin: 25px;
+  padding: 30px;
+  background-color: #1e2124;
+}
+
+.divBox, .divBoxImage{
+  display: inline-block;
+}
+
+#AboutCompany {
+  height: 300px;
+  width: 450px;
+}
+
+.subHeadBody{
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+
+}
+
+.divP {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+  top: 5%;
+}
+
+.divBoxImage {
+  float: right;
+  margin-right: 20px;
+  text-align: center;
+}
+
+#MeBox {
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+}
+
+img {
+  position: relative;
+  padding: 30px;
+}
+
+.homeP {
+  text-align: center;
+}
+
+#homeButton {
+  background-color: #1e2124;
+}
+
+#homeButton:hover {
+  background-color: #ffffff;
+}
+
+/*End of content */
+
+/*Start of footer */
+
+footer {
+  background-color: #1e2124;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding-top: 30px;
+  text-align: center;
+  color: #ffffff;
+  bottom: 0;
+  margin-top: 30px;
+}
+
+/*End of footer */
+
+/* For Mobile Phones */
+@media screen and (max-width: 470px) {
+
+  .headerNav {
+    font-size: 13px;
+  }
+
+  ul {
+    padding: 10px;
+    padding-bottom: 0px;
+  }
+
+  li {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .Heading {
+    text-align: center;
+  }
+
+  .divBody {
+    height: auto;
+  }
+
+  #AboutCompany {
+    height: auto;
+    width: 80%;
+  }
+
+
+  .divBox {
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .divBoxImage {
+    float: none;
+    margin-right: 0px;
+  }
+
+  #MeBox {
+    float: none;
+    margin-left: 0px;
+  }
+
+  #Family {
+    height: 75%;
+    width: 85%
+  }
+
+
+  #Me1 {
+    height: 80%;
+    width: 85%;
+  }
+
+  img {
+    padding: 10px;
+  }
+
+}
+
+/* For Tablets and small laptops */
+@media screen and (max-width: 1020px) and (min-width: 471px) {
+
+  .divBody {
+    height: auto;
+  }
+
+  #AboutCompany {
+    height: auto;
+    width: 80%;
+  }
+
+
+  .divBox {
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .divBoxImage {
+    float: none;
+    margin-right: 0px;
+  }
+
+  #MeBox {
+    float: none;
+    margin-left: 0px;
+  }
+
+  #Family {
+    height: 75%;
+    width: 85%
+  }
+
+
+  #Me1 {
+    height: 80%;
+    width: 85%;
+  }
+
+  img {
+    padding: 10px;
+  }
+}
+
+/* For laptops and desktop */
+@media screen and (min-width: 1250px) {
+
+  #divBodyCompany {
+    height: 1300px;
+  }
+
+  #AboutCompany {
+    width: 50%;
+    height: auto;
+  }
+
+  .divBox {
+    width: 50%;
+    height: auto;
+  }
+
+  .divBoxImage {
+    margin-right: 0px;
+    float: none;
+  }
+
+  #MeBox {
+    margin-left: 110px;
+    width: auto;
+    height: auto;
+    float: left;
+  }
+
+  #Family {
+    width: 80%;
+    height: 60%
+  }
+
+  .subHeadBody {
+    font-size: 33px;
+  }
+
+  .divP {
+    font-size: 28px;
+  }
+}

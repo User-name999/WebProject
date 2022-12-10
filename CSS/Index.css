@@ -1,0 +1,199 @@
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+body {
+  background-color: #424549;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-family: Garamond;
+}
+
+/* This is for the animation */
+@-webkit-keyframes Fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*Start of header */
+
+header, .HeadingContainer {
+  background-color: #1e2124;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Heading {
+  font-size: 50px;
+  position: relative;
+  text-align: left;
+  color: #ffffff;
+}
+
+li {
+  position: relative;
+  margin: 30px;
+  display: inline;
+  bottom: 10px;
+}
+
+.headerNav {
+  font-size: 18px;
+  background-color: inherit;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.headerNav:hover {
+  background-color: #ffffff;
+  color: #424549;
+}
+
+/*End of header */
+
+/*Start of content */
+
+.bodyHeading {
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  margin: 40px;
+  color: #ffffff;
+  animation-name: Fade;
+  animation-duration: 1s;
+}
+
+
+.HR {
+  border-color: #ffffff;
+}
+
+.Reviews {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+
+.EldenRing, .GhostOfTsushima, .OverWatch2, .VinlandSaga{
+  width: 350px;
+  height: 200px;
+  margin: 12px;
+  display: inline-block;
+  padding: 30px;
+  background-color: #1e2124;
+  animation-name: Fade;
+  animation-duration: 1s;
+}
+
+.ReviewHeadings {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.Reviews p {
+  color: #ffffff;
+  font-size: 15px;
+  text-align: left;
+  position: relative;
+  top: 50%;
+}
+
+.Reviews button {
+  position: relative;
+  top: 50%;
+  float: right;
+  border-radius: 5px;
+  width: 70px;
+  height: 32px;
+  border: none;
+  background-color: #424549;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#GhostOfTsushimaButton {
+  height: 30px;
+}
+
+.Reviews button:hover {
+  background-color: #ffffff;
+  color: #424549;
+}
+
+/*End of content */
+
+/*Start of footer */
+
+footer {
+  background-color: #1e2124;
+  position: relative;
+  bottom: 0;
+  height: 70px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+  padding-top: 40px;
+}
+
+/*End of footer */
+
+/* For Mobile Phones */
+@media screen and (max-width: 470px) {
+  .EldenRing, .GhostOfTsushima, .OverWatch2, .VinlandSaga{
+    width: 70%;
+  }
+
+  .Reviews p {
+    top: 38%;
+  }
+
+  .Reviews button {
+    top: 40%;
+  }
+
+  #GhostOfTsushimaPreview {
+    top: 21%;
+  }
+
+  #GhostOfTsushimaButton {
+    top: 23%;
+  }
+
+  .headerNav {
+    font-size: 13px;
+  }
+
+  ul {
+    padding: 10px;
+    padding-bottom: 0px;
+  }
+
+  li {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .Heading {
+    text-align: center;
+  }
+}
+/* For Mobile Phones */
+@media screen and (max-width: 470px) and (min-width:381px) {
+  #GhostOfTsushimaPreview {
+    top: 41%;
+  }
+
+  #GhostOfTsushimaButton {
+    top: 43%;
+  }
+}
